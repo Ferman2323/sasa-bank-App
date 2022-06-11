@@ -1,0 +1,97 @@
+
+*{
+    box-sizing: border-box;
+}
+
+h2{
+    align-items: center;
+    text-align: center;
+}
+
+nav{
+    margin: 50px auto;
+    justify-content: center;
+}
+button{
+    margin: 10px;
+}
+#add-account{
+    display: none;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#edit-delete-table{
+    display: none;
+}
+.edited-account {
+    display: none;
+}
+
+.accept-all-cookies{
+    width: 600px;
+    background-color: #ddd;
+    height: 150px;
+    position: fixed;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    bottom: 0%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 8px black;
+    transition: all 1s;
+    animation: accept 1s;
+}
+p{
+    padding: 10px;
+}
+
+.btn-accept-all{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes accept{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0%;;
+    }
+}
+.circle1 {
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    cursor: pointer;
+}
+.choose-theme{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 25%;
+    top: 10%;
+}
+.circle1:hover{
+    opacity: 70%;
+}
+.circle2 {
+    width: 50px;
+    height: 50px;
+    background-color: darkblue;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    cursor: pointer;
+}
+.circle2:hover{
+    opacity: 70%;
+}

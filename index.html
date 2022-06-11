@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="container">
+        <h2>Sasa Bank 2.0</h2>
+        <nav class="nav">
+            <button class="btn btn-primary" id="btn-accounts-view">Accounts</button>
+            <button class="btn btn-secondary" id="btn-add-acounts-view">Add Accounts</button>
+            <button class="btn btn-warning" id="btn-edit-delete">Edit / Delete</button>
+        </nav>
+        <div class="row" id="accounts-view">
+            <h2 class="col-1 offset-1">Accounts</h2>
+            <table class="table" id="show-accounts">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Deposit</th>
+                        <th>Card</th>
+                    </tr>
+                </thead>
+                <tbody id="table-main">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="row" id="add-account">
+            <div class="h2">Add Account</div>
+            <div>
+                <input type="text"  id="add-account-id">
+                <input type="text"  id="add-account-name">
+                <input type="text"  id="add-account-deposit">
+                <input type="text"  id="add-account-card">
+            </div>
+            <button class="btn btn-primary" id="btn-save">Save</button>
+            <div class="info"></div>
+        </div>
+        <div class="edit-delete" id="edit-delete-table">
+            <div class="row" id="accounts-view">
+                <h2 class="col-10 offset-1">Accounts</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Deposit</th>
+                            <th>Card</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-main-edit">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class=" row edited-account">
+            <h2>Edit Account</h2>
+            <div>
+                <input type="text" placeholder="id" id="eadd-account-id">
+                <input type="text" placeholder="name" id="eadd-account-name">
+                <input type="text" placeholder="deposit"  id="eadd-account-deposit">
+                <input type="text" placeholder="card" id="eadd-account-card">
+            </div>
+            <button class="btn btn-warning" id="btn-edit-save">Edit</button>
+
+        </div>
+        <div class="choose-theme">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div> 
+    <div class="accept-cookies">
+        <div class="accept-all-cookies" id="accept-all-cookies">
+            <p class="text-center">Ovaj sajt koristi kolacice. Da biste prihvatili kliknite 'Accept All'</p>
+            <button class="btn btn-primary btn-accept-all" id="accept-cookies">Accept All</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
